@@ -3,44 +3,47 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>مختبر التوعية الأمنية</title>
+<title>محاكاة التصيد - تدريب</title>
 <style>
 body {
   font-family: Arial;
+  background: #edf2f7;
   text-align: center;
-  background: #eef2f7;
   padding: 25px;
 }
-.box {
+.card {
   background: white;
+  max-width: 380px;
+  margin: 35px auto;
   padding: 25px;
-  border-radius: 15px;
-  max-width: 400px;
-  margin: 40px auto;
+  border-radius: 14px;
 }
 button {
   padding: 12px 20px;
-  background: #1769aa;
-  color: white;
   border: 0;
   border-radius: 8px;
-  font-size: 17px;
+  background: #1877f2;
+  color: white;
+  font-size: 16px;
 }
+#lesson { display: none; }
 </style>
 </head>
 <body>
-<div class="box">
-<h1>🔐 مختبر التوعية الأمنية</h1>
-<p>تدريب آمن للتعرّف على روابط التصيّد الإلكتروني.</p>
-<button onclick="document.getElementById('warning').style.display='block'">
-ابدأ الاختبار
-</button>
-<div id="warning" style="display:none">
-<h3>⚠️ تنبيه أمني!</h3>
-<p>قبل ما تفتح أي رابط، تأكد من عنوان الموقع.</p>
-<p>ما تكتبش كلمة السر بعد فتح رابط مجهول.</p>
-<p>ما تشاركش رمز التحقق مع أي شخص.</p>
-</div>
+<div class="card">
+  <h2>🔵 محاكاة توعوية لفيسبوك</h2>
+  <p>هل تستطيع اكتشاف علامات صفحة تسجيل الدخول المزيفة؟</p>
+  <p>افحص عنوان الموقع قبل إدخال بياناتك.</p>
+  <button onclick="document.getElementById('lesson').style.display='block'">
+    اكتشف علامات التصيّد
+  </button>
+  <div id="lesson">
+    <h3>⚠️ علامات الخطر</h3>
+    <p>• عنوان موقع غريب أو به أخطاء.</p>
+    <p>• رسالة مستعجلة تهدد بإغلاق حسابك.</p>
+    <p>• طلب كلمة السر أو رمز التحقق عبر رابط مجهول.</p>
+    <p>التدريب ده لا يطلب أو يحفظ أي بيانات شخصية.</p>
+  </div>
 </div>
 </body>
 </html>
