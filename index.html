@@ -1,15 +1,46 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>مختبر الأمن السيبراني</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>مختبر التوعية الأمنية</title>
+<style>
+body {
+  font-family: Arial;
+  text-align: center;
+  background: #eef2f7;
+  padding: 25px;
+}
+.box {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  max-width: 400px;
+  margin: 40px auto;
+}
+button {
+  padding: 12px 20px;
+  background: #1769aa;
+  color: white;
+  border: 0;
+  border-radius: 8px;
+  font-size: 17px;
+}
+</style>
 </head>
-<body style="font-family:Arial;text-align:center;padding:30px">
-  <h1>🔐 مختبر الأمن السيبراني</h1>
-  <p>أهلاً بيك! دي صفحة التدريب الخاصة بي.</p>
-  <button onclick="alert('خليك آمنًا ولا تفتح روابط مجهولة!')">
-    اعرض نصيحة أمنية
-  </button>
+<body>
+<div class="box">
+<h1>🔐 مختبر التوعية الأمنية</h1>
+<p>تدريب آمن للتعرّف على روابط التصيّد الإلكتروني.</p>
+<button onclick="document.getElementById('warning').style.display='block'">
+ابدأ الاختبار
+</button>
+<div id="warning" style="display:none">
+<h3>⚠️ تنبيه أمني!</h3>
+<p>قبل ما تفتح أي رابط، تأكد من عنوان الموقع.</p>
+<p>ما تكتبش كلمة السر بعد فتح رابط مجهول.</p>
+<p>ما تشاركش رمز التحقق مع أي شخص.</p>
+</div>
+</div>
 </body>
 </html>
